@@ -6,7 +6,7 @@ html {
     background-color: rgb(233, 229, 214);
 }
 body {
-    width: 600px;
+    width: 700px;
     margin: 0 auto;/* Center */
     background-color: white;
     padding: 0 20px 20px 20px;
@@ -23,4 +23,7 @@ h2 {
 }
 h3 {
     padding-top: 10px;
+}
+ul {
+    list-style-position: inside;
 }
