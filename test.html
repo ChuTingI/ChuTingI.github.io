@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>測試區 | ChuTingI</title>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link href="styles/basic.css" rel="stylesheet">
     <style type="text/css">
       .ccountry {
         width: 10em;
@@ -10,11 +12,38 @@
         padding: 8px 12px;
         background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
       }
+      .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        border:1px solid #000;
+        background-color: rgb(170, 178, 146);
+      }
+      .ttable {
+        margin-left:10px;
+      }
+      thead th {
+        border:2px solid #000;
+        padding-left:5px;
+        padding-right:5px;
+        line-height:2;
+        text-align:center;
+      }
+      tbody td {
+        border-bottom : dashed 1px #999;
+        padding-left:5px;
+      }
+      nav li {
+        display:inline-block;
+        padding-left:5px;
+        padding-right:5px;
+      }
     </style>
-      <title>測試區 | ChuTingI</title>
   </head>
 
-  <body style="background-color: rgb(233, 229, 214);">
+  <!--咖啡色rgb(54, 39, 6)-->
+  <body>
     <nav>
       <ul>
         <li><a  href="https://chutingi.github.io/">HOME</a></li>
@@ -22,51 +51,91 @@
       </ul>
     </nav>
     <!--黑色空心方框-->
-    <p style="padding: 15px; line-height: 1.5; text-align: center; border: 3px solid #000;">Hey</p>
+    <p style="padding: 15px; line-height: 1.5; text-align: center; border: 3px solid #000;position: relative; left: 30%; width: 40%;">Hey</p>
+    <!--實心墨綠方框
     <p style="background-color: rgb(70, 78, 46); color: rgb(233, 229, 214); font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
               position: relative; left: 30%; height: 40px; width: 40%; text-align: center;
-              padding-top: 8px; line-height: 1.5;">Hey</p>
+              padding-top: 8px; line-height: 1.5;">Hey</p>-->
     <!--顯示額外資訊-->
     <div title="hello~~">Hover Me!</div>
 
     <!--表格-->
     <div class="ccountry">
       <table style="text-align: left;">
-        <thead">
-          <tr>
-            <th>Country</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Japan</td>
-            <td>2019/06</td>
-          </tr>
-        </tbody>
+        <tr>
+          <th>Country</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>Japan</td>
+          <td>2019/06</td>
+        </tr>
       </table>
     </div>
 
     <!--引用文字-->
     <blockquote cite="https://chutingi.github.io/">
-      <h2>HTML Tag: blockquote</h2>
       <p>A block of text that is quoted from elsewhere.</p>
+      <p>引用文字會縮排</p>
     </blockquote>
-    <h2>HTML Tag: blockquote</h2>
-    <p>A block of text that is quoted from elsewhere.</p>
     <p>Everytime Kenny is killed, Stan will announce 
       <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
         Oh my God, you/they killed Kenny!
       </q>.
     </p>
 
-    <hgroup id="document-title">
-      <h1>HTML</h1>
-      <h2>Living Standard — Last Updated 12 August 2016</h2>
-    </hgroup>
+    <div class="boxes">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
 
-    <canvas width="800" height="450">
-      你的瀏覽器不支援 canvas!
-    </canvas>
+    <table class="ttable">
+      <thead>
+        <tr>
+          <th colspan="2">Special characters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&amp;</td>
+          <td>&amp;amp;</td>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>&amp;lt;</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>&amp;gt;</td>
+        </tr>
+        <tr>
+          <td>&quot;</td>
+          <td>&amp;quot;</td>
+        </tr>
+        <tr>
+          <td>&apos;</td>
+          <td>&amp;apos;</td>
+        </tr>
+        <tr>
+          <td>空格</td>
+          <td>&amp;nbsp;</td>
+        </tr>
+        <tr>
+          <td>半形空格</td>
+          <td>&amp;ensp;</td>
+        </tr>
+        <tr>
+          <td>全形空格</td>
+          <td>&amp;emsp;</td>
+        </tr>
+        <tr>
+          <td>窄空格</td>
+          <td>&amp;thinsp;</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
