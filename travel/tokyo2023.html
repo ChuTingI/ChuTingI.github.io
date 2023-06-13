@@ -20,18 +20,28 @@
       .metro {
         padding: 3px 5px;
       }
+      .itinerary {
+        height: 0;
+        overflow: hidden;
+      }
+      input[type=radio]:checked + .itinerary {
+        height: auto;
+      }
+      input[type=radio] {
+        display: none;
+      }
     </style>
   </head>
 
   <body>
     <h1>6/25 ~ 7/3 日本東京自由行</h1>
-    <p style="font: icon; font-size: 10px; text-align: right;">2023/05/29 Last updated</p>
+    <p style="font: icon; font-size: 10px; text-align: right;">2023/06/13 Last updated</p>
 
-    <article class="accordion">
-      <section id="Day1">
-        <label><h2>Day1 6/25 (日)</h2>
-          <input type="radio" name="day">
-        </label>
+    <article><!--accordion-->
+      <section><!--Day1-->
+        <label for="Day1"><h2>Day1 6/25 (日)</h2></label>
+        <input type="radio" name="day" id="Day1">
+        <div class="itinerary">
           <h3>去程</h3><div class="h4-indent">
           <h4>三姊妹航班 日本捷星航空(jetstar)</h4>
             <p>(TW)桃園機場 <span class="time">02:40</span> - (JP)成田機場 <span class="time">07:00</span></p>
@@ -54,12 +64,13 @@
               <p>JR 東松戶站</p>
           <h3>晚餐：一蘭</h3>
             <p>地址：</p>
+        </div>
       </section>
 
-      <section id="Day2">
-        <label><h2>Day2 6/26 (一)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day2-->
+        <label for="Day2"><h2>Day2 6/26 (一)</h2></label>
+        <input type="radio" name="day" id="Day2">
+        <div class="itinerary">
           <p>原宿Day</p>
           <h3>早午餐：bills Futako-Tamagawa</h3>
             <img src="../images/pin-24px.png" class="icon" alt="address" width="24px">
@@ -74,12 +85,13 @@
                 <a href="https://goo.gl/maps/HLDSE1AiNtwM3d736">地圖</a></p>
             <img src="../images/metro-24px.png" class="icon" alt="metro station" width="24px">
               <p>新宿西口站</p>
+        </div>
       </section>
 
-      <section id="Day3">
-        <label><h2>Day3 6/27 (二)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day3-->
+        <label for="Day3"><h2>Day3 6/27 (二)</h2></label>
+        <input type="radio" name="day" id="Day3">
+        <div class="itinerary">
           <h3>午餐：<span lang="jp">挽肉と米 渋谷店</span></h3>
             <img src="../images/pin-24px.png" class="icon" alt="address" width="24px">
               <p><span lang="jp">〒150-0043 東京都渋谷区道玄坂２丁目２８−1 椎津ビル ３F</span>&ensp;
@@ -97,57 +109,63 @@
             <ul>
               <li>現場候位，要早點去那邊登記</li>
             </ul>
+        </div>
       </section>
 
-      <section id="Day4">
-        <label><h2>Day4 6/28 (三)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day4-->
+        <label for="Day4"><h2>Day4 6/28 (三)</h2></label>
+        <input type="radio" name="day" id="Day4">
+        <div class="itinerary">
           <h3>迪士尼樂園(待定)</h3>
             <p style="color: red;">尚未訂票</p>
+        </div>
       </section>
 
-      <section id="Day5">
-        <label><h2>Day5 6/29 (四)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day5-->
+        <label for="Day5"><h2>Day5 6/29 (四)</h2></label>
+        <input type="radio" name="day" id="Day5">
+        <div class="itinerary">
           <h3>早餐</h3>
           <h3>午餐</h3>
           <h3>晚餐</h3>
+        </div>
       </section>
 
-      <section id="Day6">
-        <label><h2>Day6 6/30 (五)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day6-->
+        <label for="Day6"><h2>Day6 6/30 (五)</h2></label>
+        <input type="radio" name="day" id="Day6">
+        <div class="itinerary">
           <h3>早餐：築地市場(待定)</h3>
           <h3>午餐</h3>
           <h3>晚餐</h3>
+        </div>
       </section>
 
-      <section id="Day7">
-        <label><h2>Day7 7/1 (六)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day7-->
+        <label for="Day7"><h2>Day7 7/1 (六)</h2></label>
+        <input type="radio" name="day" id="Day7">
+        <div class="itinerary">
           <h3>早餐</h3>
           <h3>午餐</h3>
           <h3>晚餐</h3>
+        </div>
       </section>
 
-      <section id="Day8">
-        <label><h2>Day8 7/2 (日)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day8-->
+        <label for="Day8"><h2>Day8 7/2 (日)</h2></label>
+        <input type="radio" name="day" id="Day8">
+        <div class="itinerary">
           <p>這天大概是藥妝店之旅</p>
           <h3>早餐</h3>
           <h3>午餐</h3>
           <h3>晚餐</h3>
+        </div>
       </section>
 
-      <section id="Day9">
-        <label><h2>Day9 7/3 (一)</h2>
-          <input type="radio" name="day">
-        </label>
+      <section><!--Day9-->
+        <label for="Day9"><h2>Day9 7/3 (一)</h2></label>
+        <input type="radio" name="day" id="Day9">
+        <div class="itinerary">
           <h3>早餐</h3>
           <h3>午餐</h3>
           <h3>回程</h3><div class="h4-indent">
@@ -156,6 +174,7 @@
           <h4>兩老航班 華航</h4>
             <p>(JP)成田機場 <span class="time">18:20</span> - (TW)桃園機場 <span class="time">21:10</span></p>
           </div>
+        </div>
       </section>
 
       <h2>還沒排進的行程</h2>
