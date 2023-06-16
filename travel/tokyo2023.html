@@ -4,10 +4,15 @@
     <title>東京2023 | ChuTingI</title>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/basic.css" rel="stylesheet">
+    <link href="../styles/mobile.css" rel="stylesheet">
     <style type="text/css">
       .h4-indent {
         margin-left: 20px;
+      }
+      .flight {
+        display: block;
+        border: #333 1px solid;
+        padding: 0 20px;
       }
       .time {
         font-weight: bold;
@@ -42,19 +47,29 @@
         <label for="Day1"><h2>Day1 6/25 (日)</h2></label>
         <input type="radio" name="day" id="Day1">
         <div class="itinerary">
-          <h3>去程</h3><div class="h4-indent">
-          <h4>三姊妹航班 日本捷星航空(jetstar)</h4>
-            <p>(TW)桃園機場 <span class="time">02:40</span> - (JP)成田機場 <span class="time">07:00</span></p>
+          <h3>去程</h3>
+          <div class="flight">
+            <h4>三姊妹航班 日本捷星航空(jetstar)</h4>
+              <p>(TW)桃園機場 <span class="time">02:40</span> - (JP)成田機場 <span class="time">07:00</span></p>
+          </div><div class="h4-indent">
+          <a href="https://www.narita-airport.jp/ch2/service/svc_07">行李寄放地點</a>
+          <h4>千葉酒酒井Outlet</h4>
+            <p>營業時間：早上10點開門，<a href="https://www.bobblog.tw/shisui-premium-outlets-transport/">交通方式圖解</a></p>
             <ul>
-              <li>行李寄放</li>
-              <li>機場巴士班次，一趟15分鐘？搭乘時間 9：47/13：20</li>
-              <img src="../images/airport-bus.jpg" width="600px">
-              <li>酒酒井Outlet</li>
-              <li>13:30左右回到機場等阿華姊妹花</li>
+              <li>機場巴士車程20分鐘，票價500日圓。<br>
+                  第一航廈1樓搭車處：30號站牌<br>
+                  第二航廈1樓搭車處：28號站牌<br>
+                  搭乘時間→<span style="color: red;">第二航廈9：47發車，13：20回程</span></li>
+              <img src="../images/airport-bus.jpg" width="700px">
+              <li>13:40左右回到機場等阿華姊妹花</li>
             </ul>
-          <h4>兩老航班 華航</h4>
-            <p>(TW)桃園機場 <span class="time">08:50</span> - (JP)成田機場 <span class="time">13:15</span></p>
-            <p>接到後直接前往住宿點（查要多久會到）</p>
+          </div><div class="flight">
+            <h4>兩老航班 華航</h4>
+              <p>(TW)桃園機場 <span class="time">08:50</span> - (JP)成田機場 <span class="time">13:15</span></p>
+          </div><div class="h4-indent">
+            <p>接到後直接前往搭乘<strong>京成成田SKYACCESS ACCESS特急（往京成上野）</strong><br>
+               <u>14：04</u>與<u>14：44</u>各有一班，預計分別於<u>14：38</u>與<u>15：18</u>抵達東松戶站<br>
+               票價953日圓，直達車無須轉車</p>
           </div>
           <h3>這幾天的家：ReLa Higashi Matsudo</h3>
             <img src="../images/home-24px.png" class="icon" alt="home" width="24px">
@@ -168,11 +183,14 @@
         <div class="itinerary">
           <h3>早餐</h3>
           <h3>午餐</h3>
-          <h3>回程</h3><div class="h4-indent">
-          <h4>三姊妹航班 日本捷星航空(jetstar)</h4>
-            <p>(JP)成田機場 <span class="time">22:50</span> - (TW)桃園機場 <ins>7/4</ins> <span class="time">01:40</span></p>
-          <h4>兩老航班 華航</h4>
-            <p>(JP)成田機場 <span class="time">18:20</span> - (TW)桃園機場 <span class="time">21:10</span></p>
+          <h3>回程</h3>
+          <div class="flight">
+            <h4>三姊妹航班 日本捷星航空(jetstar)</h4>
+              <p>(JP)成田機場 <span class="time">22:50</span> - (TW)桃園機場 <ins>7/4</ins> <span class="time">01:40</span></p>
+          </div>
+          <div class="flight">
+            <h4>兩老航班 華航</h4>
+              <p>(JP)成田機場 <span class="time">18:20</span> - (TW)桃園機場 <span class="time">21:10</span></p>
           </div>
         </div>
       </section>

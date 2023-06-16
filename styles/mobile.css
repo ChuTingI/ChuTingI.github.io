@@ -1,0 +1,33 @@
+/*
+ * 咖啡色rgb(54, 39, 6)
+ * 淺抹茶rgb(172, 185, 146)
+ */
+ html {
+    background-color: rgb(233, 229, 214);
+}
+body {
+    width: 800px;
+    margin: 0 auto;/* Center */
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    /* display: block -> The body element is block level */
+    font-size: 18px;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 1px 1px 1px #333;
+    text-align: center;
+    font-size: 45px;
+}
+h2 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+h3 {
+    padding-top: 10px;
+    font-size: 24px;
+}
+ul {
+    list-style-position: outside;
+}
