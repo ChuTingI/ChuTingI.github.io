@@ -22,11 +22,6 @@
         float: left;
         padding-right: 15px;
       }
-      .metro {
-        display: block;
-        padding: 3px 5px;
-        background-color: rgb(233, 229, 214);
-      }
       .itinerary {
         height: 0;
         overflow: hidden;
@@ -37,11 +32,12 @@
       input[type=radio] {
         display: none;
       }
-      h3 p {
-        margin-left: 10px;
+      table {
+        margin-left: 20px;
+        width: 760px;
       }
-      tr:nth-child(even) {background: gray}
-      tr:nth-child(odd) {background: white}
+      tr:nth-child(even) {background: rgb(233, 229, 214);}
+      tr:nth-child(odd) {background: rgb(223, 238, 216);}
     </style>
   </head>
 
@@ -52,7 +48,7 @@
 
     <article><!--accordion-->
       <section><!--Day1-->
-        <label for="Day1"><h2>Day1 6/25 (日)</h2></label>
+        <label for="Day1"><h2>Day1 6/25 (日) 起程</h2></label>
         <input type="radio" name="day" id="Day1">
         <div class="itinerary">
           <h3>去程</h3>
@@ -89,86 +85,119 @@
           <img src="../images/home-64px.png" class="icon" alt="home" width="64px">
           <h3>這幾天的家：ReLa Higashi Matsudo</h3>
             <table>
-              <td>
-                <span lang="jp">〒270-2225 千葉県松戸市東松戸１丁目３−2</span>
-              </td>
-              <td>
-                東松戶站
-              </td>
+              <tr><td>
+                <span lang="jp">〒270-2225 千葉県松戸市東松戸１丁目３−2</span>&ensp;
+                <a href="https://goo.gl/maps/9rd9KkithYw98Kgr7">地圖</a>
+              </td></tr>
+              <tr><td>東松戶站</td></tr>
             </table>
           <br>
-            <p><span lang="jp">〒270-2225 千葉県松戸市東松戸１丁目３−2</span>&ensp;
-              <a href="https://goo.gl/maps/9rd9KkithYw98Kgr7">地圖</a></p>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
           <h3>Shibuya Sky</h3>
-            <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
-              <p><span lang="jp">〒150-6145 東京都渋谷区渋谷２丁目２４−12, Shibuya Scramble Square, 14階・45階・46階・屋上</span>&ensp;
-                <a href="https://goo.gl/maps/w9HEo9ASM6e7BBqJA">地圖</a></p>
-            <img src="../images/metro-64px.png" class="icon" alt="metro station" width="64px">
-              <p><span lang="jp">渋谷駅</span>，從東松戶出發大概要花1個小時=大約下午4點要從住處出發</p>
+            <table>
+              <tr><td>
+                <span lang="jp">〒150-6145 東京都渋谷区渋谷２丁目２４−12, Shibuya Scramble Square, 14階・45階・46階・屋上</span>&ensp;
+                <a href="https://goo.gl/maps/w9HEo9ASM6e7BBqJA">地圖</a>
+              </td></tr>
+              <tr><td><span lang="jp">渋谷駅</span>，從東松戶出發大概要花1個小時=大約下午4點要從住處出發</td></tr>
+            </table>
             <div class="indent">
               <p>門票入場時間：17:20<br>
                  當天日落時間 <span class="time">19:00</span></p>
             </div>
+          <br>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
           <h3>晚餐：一蘭 澀谷西班牙坂店（<span lang="jp">渋谷スペイン坂店</span>）</h3>
-            <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
-              <p><span lang="jp">〒150-0042 東京都渋谷区宇田川町１３−7 コヤスワン B1F</span>&ensp;
-                <a href="https://goo.gl/maps/duYA29M6VERGosWS9">地圖</a></p>
-            <img src="../images/metro-64px.png" class="icon" alt="metro station" width="64px">
-              <p>走路</p>
+            <table>
+              <tr><td>
+                <span lang="jp">〒150-0042 東京都渋谷区宇田川町１３−7 コヤスワン B1F</span>&ensp;
+                <a href="https://goo.gl/maps/duYA29M6VERGosWS9">地圖</a>
+              </td></tr>
+              <tr><td>走路去</td></tr>
+            </table>
         </div>
       </section>
 
       <section><!--Day2-->
-        <label for="Day2"><h2>Day2 6/26 (一)</h2></label>
+        <label for="Day2"><h2>Day2 6/26 (一) 原宿</h2></label>
         <input type="radio" name="day" id="Day2">
         <div class="itinerary">
-          <p>原宿Day</p>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
           <h3>早午餐：bills Futako-Tamagawa</h3>
-            <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
-              <p><span lang="jp">〒158-0094 東京都世田谷区玉川２丁目２７−5 高島屋S・Cマロニエコート 3F</span>&ensp;
-                <a href="https://goo.gl/maps/zAkFivzp4X5pYXRj8">地圖</a></p>
-            <img src="../images/metro-64px.png" class="icon" alt="metro station" width="64px">
-              <p>二子玉川站</p>
+            <table>
+              <tr><td>
+                <span lang="jp">〒158-0094 東京都世田谷区玉川２丁目２７−5 高島屋S・Cマロニエコート 3F</span>&ensp;
+                <a href="https://goo.gl/maps/zAkFivzp4X5pYXRj8">地圖</a>
+              </td></tr>
+              <tr><td>二子玉川站</td></tr>
+            </table>
+          <br>
           <h3>竹下通逛街</h3>
+          <br>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
           <h3>晚餐：燒肉亭 六歌仙 新宿西口1號店</h3>
-            <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
-              <p><span lang="jp">〒160-0023 東京都新宿区西新宿１丁目３−1 新宿サンフラワービル 6F/7F</span>&ensp;
-                <a href="https://goo.gl/maps/HLDSE1AiNtwM3d736">地圖</a></p>
-            <img src="../images/metro-64px.png" class="icon" alt="metro station" width="64px">
-              <p>新宿西口站</p>
+            <table>
+              <tr><td>
+                <span lang="jp">〒160-0023 東京都新宿区西新宿１丁目３−1 新宿サンフラワービル 6F/7F</span>&ensp;
+                <a href="https://goo.gl/maps/HLDSE1AiNtwM3d736">地圖</a>
+              </td></tr>
+              <tr><td>新宿西口站</td></tr>
+            </table>
+            <div class="indent">
+              <p>訂位時間：<span class="time">18:00</span><br>
+                 月之宴，用餐時間90分鐘</p>
+            </div>
         </div>
       </section>
 
       <section><!--Day3-->
-        <label for="Day3"><h2>Day3 6/27 (二)</h2></label>
+        <label for="Day3"><h2>Day3 6/27 (二) 澀谷</h2></label>
         <input type="radio" name="day" id="Day3">
         <div class="itinerary">
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
           <h3>午餐：<span lang="jp">挽肉と米 渋谷店</span></h3>
-            <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
-              <p><span lang="jp">〒150-0043 東京都渋谷区道玄坂２丁目２８−1 椎津ビル ３F</span>&ensp;
-                <a href="https://goo.gl/maps/uQ9Yz1tpPzBuCpyh8">地圖</a></p>
-            <img src="../images/metro-64px.png" class="icon" alt="metro station" width="64px">
-              <p>JR 澀谷站</p>
-            <ul>
-              <li>早上<span class="time">08:00</span>到，排隊領號碼牌，越前面可以選的時段越多</li>
-              <li>可能變下午吃，要看拿到號碼牌的時間</li>
-            </ul>
+            <table>
+              <tr><td>
+                <span lang="jp">〒150-0043 東京都渋谷区道玄坂２丁目２８−1 椎津ビル ３F</span>&ensp;
+                <a href="https://goo.gl/maps/uQ9Yz1tpPzBuCpyh8">地圖</a>
+              </td></tr>
+              <tr><td>澀谷站</td></tr>
+            </table>
+            <div class="indent">
+              <p>早上<span class="time">08:00</span>到，排隊領整理券</p>
+            </div>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
           <h3>晚餐：<span lang="jp">梅丘 寿司の美登利 渋谷店</span></h3>
-            <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
-              <p><span lang="jp">〒150-0043 東京都渋谷区道玄坂１丁目１２−3 マークシティイースト ４Ｆ</span>&ensp;
-                <a href="https://goo.gl/maps/8ZeEysXZMhZCpjbVA">地圖</a></p>
-            <ul>
-              <li>現場候位，要早點去那邊登記</li>
-            </ul>
+            <table>
+              <tr><td>
+                <span lang="jp">〒150-0043 東京都渋谷区道玄坂１丁目１２−3 マークシティイースト ４Ｆ</span>&ensp;
+                <a href="https://goo.gl/maps/8ZeEysXZMhZCpjbVA">地圖</a>
+              </td></tr>
+              <tr><td>澀谷站</td></tr>
+            </table>
+            <div class="indent">
+              <p>現場候位，要早點去那邊登記</p>
+            </div>
         </div>
       </section>
 
       <section><!--Day4-->
-        <label for="Day4"><h2>Day4 6/28 (三)</h2></label>
+        <label for="Day4"><h2>Day4 6/28 (三) 迪士尼</h2></label>
         <input type="radio" name="day" id="Day4">
         <div class="itinerary">
-          <h3>迪士尼樂園(待定)</h3>
-            <p style="color: red;">尚未訂票</p>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
+          <h3>迪士尼樂園</h3>
+            <table>
+              <tr><td>
+                <span lang="jp">〒279-0031 千葉県浦安市舞浜1-1</span>&ensp;
+                <a href="https://goo.gl/maps/iggPUejiSsd7vDCbA">地圖</a>
+              </td></tr>
+              <tr><td>舞濱站</td></tr>
+            </table>
+            <div class="indent">
+              <p>表定時間8:00開始營業，建議早到。22:00關門<br>
+                 遊行或設施還沒查</p>
+            </div>
         </div>
       </section>
 
@@ -183,10 +212,10 @@
       </section>
 
       <section><!--Day6-->
-        <label for="Day6"><h2>Day6 6/30 (五)</h2></label>
+        <label for="Day6"><h2>Day6 6/30 (五) 築地 + 台場</h2></label>
         <input type="radio" name="day" id="Day6">
         <div class="itinerary">
-          <h3>早餐：築地市場(待定)</h3>
+          <h3>築地市場</h3>
           <h3>午餐</h3>
           <h3>晚餐</h3>
         </div>
@@ -206,7 +235,7 @@
         <label for="Day8"><h2>Day8 7/2 (日)</h2></label>
         <input type="radio" name="day" id="Day8">
         <div class="itinerary">
-          <p>這天大概是藥妝店之旅</p>
+          <p>這天大概是藥妝店、uniqlo、唐吉訶德之旅</p>
           <h3>早餐</h3>
           <h3>午餐</h3>
           <h3>晚餐</h3>
@@ -214,11 +243,67 @@
       </section>
 
       <section><!--Day9-->
-        <label for="Day9"><h2>Day9 7/3 (一)</h2></label>
+        <label for="Day9"><h2>Day9 7/3 (一) 伴手禮</h2></label>
         <input type="radio" name="day" id="Day9">
         <div class="itinerary">
-          <h3>早餐</h3>
-          <h3>午餐</h3>
+          <h3>伴手禮</h3>
+            <ul>
+              <li>福砂屋</li>
+              <li>高島屋</li>
+            </ul>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
+          <h3>NewYork Perfect Cheese</h3>
+            <p class="indent">中午就會完售，建議一大早就去排隊&ensp;<a href="https://bobby.tw/blog/post/227831492-%E3%80%90%E6%9D%B1%E4%BA%AC%E5%BF%85%E8%B2%B7%E3%80%91newyork-perfect-cheese%E8%B5%B7%E5%8F%B8%E5%A5%B6%E6%B2%B9%E8%84%86%E9%A4%85">攻略</a></p>
+            <p class="indent">東京車站店</p>
+            <table>
+              <tr><td>東京車站1樓 丸之內南口檢票口內&ensp;<a href="https://goo.gl/maps/GyLyYSDu3QRQAYUj8">地圖</a></td></tr>
+              <tr><td>東京車站</td></tr>
+              <tr><td>營業時間:08:00-22:00</td></tr>
+            </table>
+            <p class="indent">京王百貨店</p>
+            <table>
+              <tr><td>京王百貨1樓&ensp;<a href="https://goo.gl/maps/JaAiFwUN5kzubKjj8">地圖</a></td></tr>
+              <tr><td>新宿站</td></tr>
+              <tr><td>買完可以到樓上百貨公司的退稅櫃台辦理退稅</td></tr>
+              <tr><td>營業時間:10:00-20:00</td></tr>
+            </table>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
+          <h3>Press Butter Sand焦糖奶油夾心餅乾</h3>
+          <p class="indent"><a href="https://bobby.tw/blog/post/227986469">攻略</a></p>
+          <p class="indent">大丸東京店</p>
+            <table>
+              <tr><td>東京車站B1&ensp;<a href="https://goo.gl/maps/BYEga6BZSJ3zgn9y8">地圖</a></td></tr>
+              <tr><td>東京車站</td></tr>
+              <tr><td>營業時間:10:00-20:00</td></tr>
+            </table>
+          <p class="indent">新宿店</p>
+            <table>
+              <tr><td>LUMINE EST新宿B1&ensp;<a href="https://goo.gl/maps/u7YoxmMu6pHPBLez6">地圖</a></td></tr>
+              <tr><td>新宿站</td></tr>
+              <tr><td>營業時間:平日11:00-21:00&ensp;假日10:30-21:00</td></tr>
+            </table>
+          <p class="indent">成田機場店</p>
+            <table>
+              <tr><td>成田機場第二航廈4樓&ensp;<a href="https://goo.gl/maps/WrJed2ukmYjA6hun6">地圖</a></td></tr>
+              <tr><td>營業時間:09:00-17:00</td></tr>
+              <tr><td>有抹茶口味，超過5000日圓可以退稅，但是在市區是沒有相關優惠的。</td></tr>
+            </table>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
+          <h3>Butter no Itoko</h3>
+          <p class="indent">新宿店</p>
+            <table>
+              <tr><td>LUMINE EST新宿B1&ensp;<a href="https://goo.gl/maps/NzUDY1kFL8zsYrdi7">地圖</a></td></tr>
+              <tr><td>新宿站</td></tr>
+              <tr><td>營業時間:平日11:00-21:00&ensp;假日10:30-21:00</td></tr>
+            </table>
+          <img src="../images/pin-64px.png" class="icon" alt="address" width="64px">
+          <h3><span lang="jp">喫茶店に恋して</span></h3>
+          <p class="indent"><span lang="jp">東京駅グランスタ店</span></p>
+            <table>
+              <tr><td>GRANSTA東京·GRANSTA丸之內B1 八重洲地下中央口&ensp;<a href="https://goo.gl/maps/5Xd6HgVvbaorVfsn7">地圖</a></td></tr>
+              <tr><td>東京車站 銀座</td></tr>
+              <tr><td>營業時間:08:00-21:00</td></tr>
+            </table>
           <h3>回程</h3>
           <div class="flight">
             <h4>三姊妹航班 日本捷星航空(jetstar)</h4>
@@ -233,18 +318,16 @@
 
       <h2>還沒排進的行程</h2>
       <ul>
-        <li>Shibuya sky(待定)(尚未訂票)</li>
         <li>Burger prince</li>
         <li>Shake shack</li>
         <li>Shogun burger</li>
-        <li>抹茶甜點店?冰店?</li>
         <li>富士山腳下</li>
         <li>根室花丸</li>
         <li>原宿一日遊</li>
         <ul>
           <li>表參道</li>
           <li>明智神宮</li>
-          <li>中午 Afuri原宿</li>
+          <li>Afuri原宿</li>
         </ul>
         <li>築地市場</li>
         <ul>
