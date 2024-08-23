@@ -9,7 +9,15 @@
     <link href="styles/basic.css" rel="stylesheet">
     <!-- link要在base前面，base才不會影響到link
     <base href="https://chutingi.github.io/" target="_self">-->
-    <style type="text/css"></style>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+      .bodyfont {
+        font-family: "Nunito", "文泉驛正黑", "WenQuanYi Zen Hei", "標楷體", PMingLiu, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+    </style>
     <!--
       @media screen and (min-width: 1024px) {
         //如果使用者視窗寬度 >= 1024px，載入這裡的 CSS。
@@ -23,21 +31,23 @@
     -->
   </head>
 
-  <body>
+  <body class="bodyfont">
     <h1 style="background-color: rgb(172, 185, 146); color: rgb(70, 78, 46);">Hey</h1><!-- line-height: 1.5; padding-left: 10px;-->
     <!--Date Update-->
-    <p style="font: icon; font-size: 10px;">2023/05/26 Last updated.</p>
-    <p>嗨！這裡是我記錄學習和興趣的一方天地。
-      <br>和我一起享受這趟旅程吧！</p>
+    <p style="font: icon; font-size: 10px;">2024/08/23 Last updated.</p>
+    <p>嗨！這裡是我記錄學習和興趣的一方天地。<br>
+        和我一起享受這趟旅程吧！</p>
     <p>持續維護與更新<br><strong>記得註解！</strong></p>
-    <ul style="list-style-type: georgian;">
+    <ul style="list-style-type: square;">
       <li>Bio</li>
       <li>Hobby</li>
       <li>Learning Note</li>
-      <li><a href="test.html">Test Page</a></li>
       <li><a href="bookmark.html">Website Bookmark</a></li>
-      <!--
-      <li><a href="travel/tokyo2023.html">Travel-Tokyo2023</a></li>-->
+      <li>Travel Diary<ul>
+        <li><a href="travel/tokyo2023.html">Tokyo2023</a></li>
+        <li><a href="travel/okinawa2024.html">Okinawa2024</a></li>
+      </ul></li>
+      <li><a href="test.html">Test Page</a></li>
     </ul>
   </body>
 </html>

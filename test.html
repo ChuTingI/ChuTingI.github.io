@@ -20,8 +20,25 @@
         border:1px solid #000;
         background-color: rgb(170, 178, 146);
       }
-      .ttable {
-        margin-left:10px;
+      .accordion label {
+        display: block;
+        text-align: center;
+        background-color: rgb(176, 213, 238);
+        margin-top: 10px;
+        padding: 6px;
+        cursor: pointer;
+      }
+      input[type=radio] {
+        display: none;
+      }
+      input[type=radio]:checked + .accordion-content {
+        height: auto;
+        border: 0.5px solid #bbbbbb;
+      }
+      .accordion-content {
+        padding: 2px 12px;
+        height: 0px;
+        overflow: hidden;
       }
       thead th {
         border:2px solid #000;
@@ -92,7 +109,7 @@
       <div>5</div>
     </div>
 
-    <table class="ttable">
+    <table style="margin-left:10px;">
       <thead>
         <tr>
           <th colspan="2">Special characters</th>
@@ -100,47 +117,46 @@
       </thead>
       <tbody>
         <tr>
-          <td>&amp;</td>
-          <td>&amp;amp;</td>
+          <td>&amp;</td><td>&amp;amp;</td>
         </tr>
         <tr>
-          <td>&lt;</td>
-          <td>&amp;lt;</td>
+          <td>&lt;</td><td>&amp;lt;</td>
         </tr>
         <tr>
-          <td>&gt;</td>
-          <td>&amp;gt;</td>
+          <td>&gt;</td><td>&amp;gt;</td>
         </tr>
         <tr>
-          <td>&quot;</td>
-          <td>&amp;quot;</td>
+          <td>&quot;</td><td>&amp;quot;</td>
         </tr>
         <tr>
-          <td>&apos;</td>
-          <td>&amp;apos;</td>
+          <td>&apos;</td><td>&amp;apos;</td>
         </tr>
         <tr>
-          <td>&#39;</td>
-          <td>&amp;#39;</td>
+          <td>&#39;</td><td>&amp;#39;</td>
         </tr>
         <tr>
-          <td>空格</td>
-          <td>&amp;nbsp;</td>
+          <td>空格</td><td>&amp;nbsp;</td>
         </tr>
         <tr>
-          <td>半形空格</td>
-          <td>&amp;ensp;</td>
+          <td>半形空格</td><td>&amp;ensp;</td>
         </tr>
         <tr>
-          <td>全形空格</td>
-          <td>&amp;emsp;</td>
+          <td>全形空格</td><td>&amp;emsp;</td>
         </tr>
         <tr>
-          <td>窄空格</td>
-          <td>&amp;thinsp;</td>
+          <td>窄空格</td><td>&amp;thinsp;</td>
         </tr>
       </tbody>
     </table>
     <!--<script src="scripts/test.js"></script>-->
+
+    <!--手風琴-->
+    <div class="accordion">
+      <label for="tab1">Number 1</label>
+        <input type="radio" name="tab" id="tab1">
+        <div class="accordion-content">hehenakdnfenfmnfie,dmnfikssssssssssssssssssssssssssssssssssssssskniemdcns.eifn,dnseinf,sd.kslwknr/a.dnfie;pw n3rn3/jijijfioekfljsdif kas;df;;;;;;;;oewk3ojrsssssssssssssssssnjfpwo4rlllllllllll</div>
+      <label for="tab2">Number 2</label>
+        <input type="radio" name="tab" id="tab2">
+    </div>
   </body>
 </html>

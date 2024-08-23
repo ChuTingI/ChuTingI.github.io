@@ -10,6 +10,7 @@ body {
     margin: 0 auto;/* Center */
     background-color: white;
     padding: 0 20px 20px 20px;
+    word-wrap: break-word;
     /* display: block -> The body element is block level */
 }
 h1 {
